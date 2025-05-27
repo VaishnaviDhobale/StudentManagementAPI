@@ -1,24 +1,57 @@
 # Student Management API - Spring Boot
 
-A simple REST API to manage student records using Spring Boot.
+This is a simple RESTful API built using Spring Boot for managing student records. It performs CRUD operations and stores data in a relational database (MySQL or H2). All endpoints have been tested using Postman.
 
-## Features
-- Add student (POST /students)
-- Get all students (GET /students)
-- Get student by ID (GET /students/{id})
-- Update student by ID (PUT /students/{id})
-- Delete student by ID (DELETE /students/{id})
-
-## Technologies
+## 🔧 Technologies Used
+- Java
 - Spring Boot
 - Spring Data JPA
-- MySQL or H2 Database
+- MySQL or H2 (You can switch based on configuration)
+- Postman (for API testing)
 
-## How to Run
-1. Configure database in `application.properties`
-2. Run the Spring Boot application
-3. Test API endpoints using Postman
+---
 
-## Author
-Vaishnavi Dhobale  
-Email: vaishnavidhobale5@gmail.com
+## 📦 Model
+
+### `Student`
+| Field | Type   | Description           |
+|-------|--------|-----------------------|
+| id    | Long   | Auto-generated ID     |
+| name  | String | Student name          |
+| email | String | Student email address |
+| course| String | Enrolled course       |
+
+---
+
+## 📁 Project Structure
+
+``` 
+src
+└── main
+├── java
+│ └── com.example.sma
+│ ├── controller
+│ │ └── StudentController.java
+│ ├── model
+│ │ └── Student.java
+│ ├── repository
+│ │ └── StudentRepository.java
+│ └── service
+│ └── StudentService.java
+└── resources
+└── application.properties
+```
+
+---
+
+## 📌 API Endpoints
+
+| Method | Endpoint            | Description             |
+|--------|---------------------|-------------------------|
+| POST   | `/students`         | Add a new student       |
+| GET    | `/students`         | Get all students        |
+| GET    | `/students/{id}`    | Get a student by ID     |
+| PUT    | `/students/{id}`    | Update a student by ID  |
+| DELETE | `/students/{id}`    | Delete a student by ID  |
+
+---
