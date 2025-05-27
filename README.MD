@@ -1,12 +1,12 @@
 # Student Management API - Spring Boot
 
-This is a simple RESTful API built using Spring Boot for managing student records. It performs CRUD operations and stores data in a relational database (MySQL or H2). All endpoints have been tested using Postman.
+This is a simple RESTful API built using Spring Boot for managing student records. It performs CRUD operations and stores data in a relational database (MySQL). All endpoints have been tested using Postman.
 
 ## 🔧 Technologies Used
 - Java
 - Spring Boot
 - Spring Data JPA
-- MySQL or H2 (You can switch based on configuration)
+- MySQL
 - Postman (for API testing)
 
 ---
